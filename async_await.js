@@ -7,7 +7,7 @@ const urls = [
   "https://jsonplaceholder.typicode.com/todos"
 ];
 
-const getData = async function() {
+const getData1 = async function() {
   try {
     const [users, photos, todos] = await Promise.all(
       urls.map(url => fetch(url).then(data => data.json()))
@@ -20,4 +20,16 @@ const getData = async function() {
   }
 };
 
-getData()
+// es9 syntax: for await of
+const getData2 = async function() {
+  try {
+    const arrOfPromises = urls.map(url => fetch(url))
+    for await (let req of arrOfPromises) {
+      let data = await req.json()
+      console.log(data.length)
+    }
+  } catch(e) {
+    console.log(e)
+  }
+};
+getData2()
