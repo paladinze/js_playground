@@ -1,0 +1,23 @@
+{
+  "name": "js_playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "error_extend.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paladinze/js_playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paladinze/js_playground/issues"
+  },
+  "homepage": "https://github.com/paladinze/js_playground#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}
